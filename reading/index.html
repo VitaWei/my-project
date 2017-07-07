@@ -7,24 +7,13 @@
 
     
 
-    <title>How to build myBlog | </title>
+    <title>读书 | </title>
     <meta name="author" content="VitaHu">
-    
-    <meta name="description" content="hexo
-安装hexonpm install hexo-cli -g
-
-创建一个博客文件夹在文件夹中执行    hexo init
-
-在文件夹中直接执行 hexo s  在本地测试网页效果
-
-
-新建文章hexo new “文章名称”
-这句命令执行完毕之后，会在source/_posts/ 中生成以文">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="How to build myBlog"/>
+    <meta property="og:title" content="读书"/>
     <meta property="og:site_name" content="VitaHu Hexo"/>
 
     
@@ -201,106 +190,182 @@
 
 
     <main>
-        <div class="container main-container">
-    <nav class="page-nav hide-on-small-only">
-    <div class="nav-wrapper green">
-        <span class="breadcrumb">当前位置（分类目录）</span>
-        
-            
-
         
 
-        
-    </div>
-</nav>
-
-<article>
-    <div class="card">
-        <div class="card-content">
-            
-
-            <div class="article-title">
-                
+<div class="container main-container">
     
-        <h1>How to build myBlog</h1>
-    
-
-
+        <div class="">
+            <div class="row">
+                <ul class="tabs ">
+                    
+                        <li class="tab col s4 ">
+                            <a class="red-text " href="#readed">已读(3)</a>
+                        </li>
+                    
+                        <li class="tab col s4 ">
+                            <a class="red-text " href="#reading">在读(1)</a>
+                        </li>
+                    
+                        <li class="tab col s4 ">
+                            <a class="red-text " href="#wanted">想读(1)</a>
+                        </li>
+                    
+                </ul>
             </div>
-            <time class="red-link-context" datetime="2017-06-25T08:09:19.000Z"><a href="/2017/06/25/myBlog/">2017-06-25</a></time>
-
-            <span id="busuanzi_container_page_pv" class="read-times-container">
-    <i class="fa fa-eye"></i>
-    <span id="busuanzi_value_page_pv"></span>
-</span>
 
             
+                <div id="readed" class="row" style="margin-top: 20px;">
+                    
+                    
+                        <div class="book-item col s12 m6">
+                            <div class="card small hoverable">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="card-cover-image activator" src="http://img3.douban.com/lpic/s23139051.jpg">
+                                </div>
+                                <div class="card-content red-link-context">
+                                    <span class="card-title truncate activator grey-text text-darken-4">众妙之门：网站UI设计之道
+                                    </span>
+                                    <p>评分: 7
+                                        <a class="external-link right" href="http://book.douban.com/subject/20281463/" target="_blank">
 
-            <div class="toc red-link-context hide-on-med-and-down">
-    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#hexo"><span class="section table-of-contents-text">hexo</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#新建文章"><span class="section table-of-contents-text">新建文章</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#编辑文章"><span class="section table-of-contents-text">编辑文章</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#生成html"><span class="section table-of-contents-text">生成html</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#如何使用hexo-d-来发布网站呢"><span class="section table-of-contents-text">如何使用hexo d 来发布网站呢</span></a></li></ol></li></ol>
-</div>
+                                            <i class="fa fa-external-link"></i>
+                                        </a>
+                                    </p>
+                                </div>
 
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">简评
+                                        <i class="fa fa-times-circle-o right"></i>
+                                    </span>
 
-            <div class="entry red-link-context">
-                <h1 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h1><ol>
-<li><p>安装hexo<br>npm install hexo-cli -g</p>
-</li>
-<li><p>创建一个博客文件夹<br>在文件夹中执行    hexo init</p>
-</li>
-<li><p>在文件夹中直接执行 hexo s  在本地测试网页效果</p>
-</li>
-</ol>
-<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>hexo new “文章名称”</p>
-<p>这句命令执行完毕之后，会在source/_posts/ 中生成以文章名为文件名的markdown文件</p>
-<h2 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h2><p>找到对应的markdown文件，编辑内容即可</p>
-<h2 id="生成html"><a href="#生成html" class="headerlink" title="生成html"></a>生成html</h2><p>hexo g</p>
-<p>执行这条命令之后，会在public目录下生成所有的静态页面，只要将该目录下所有的文件进行发布，发布到github上，就可以通过github的静态页面托管服务来访问页面了</p>
-<h2 id="如何使用hexo-d-来发布网站呢"><a href="#如何使用hexo-d-来发布网站呢" class="headerlink" title="如何使用hexo d 来发布网站呢"></a>如何使用hexo d 来发布网站呢</h2><ol>
-<li><p>安装 hexo-deployer-git<br>npm install hexo-deployer-git –save</p>
-</li>
-<li><p>配置网站根目录下面的_config.yml<br>配置最下面的deloy节点<br>deploy:</p>
-<ul>
-<li>type: git<br>repo: github静态页面托管项目的地址</li>
-</ul>
-</li>
-</ol>
-<p>2.1 在public目录下执行 git init 并进行一次提交</p>
-<ol>
-<li><p>按照正常流程创建博客， 编辑博客</p>
-</li>
-<li><p>执行hexo g</p>
-</li>
-<li><p>在 public 目录下去执行 hexo d</p>
-</li>
-</ol>
+                                    <p>推荐非UI人士了解UI阅读。</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="book-item col s12 m6">
+                            <div class="card small hoverable">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="card-cover-image activator" src="http://img5.douban.com/lpic/s11337059.jpg">
+                                </div>
+                                <div class="card-content red-link-context">
+                                    <span class="card-title truncate activator grey-text text-darken-4">JavaScript模式
+                                    </span>
+                                    <p>评分: 8.5
+                                        <a class="external-link right" href="http://book.douban.com/subject/11506062/" target="_blank">
 
-                
-<p class="red-link-context">
-    <a href="/2017/06/25/How-to-build-myBlog/" rel="next" title="How to build myBlog">
-    上一篇：How to build myBlog
-  </a>
-</p>
+                                            <i class="fa fa-external-link"></i>
+                                        </a>
+                                    </p>
+                                </div>
 
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">简评
+                                        <i class="fa fa-times-circle-o right"></i>
+                                    </span>
 
+                                    <p>书很薄，但内容相当实用。</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="book-item col s12 m6">
+                            <div class="card small hoverable">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="card-cover-image activator" src="http://img3.douban.com/lpic/s11373174.jpg">
+                                </div>
+                                <div class="card-content red-link-context">
+                                    <span class="card-title truncate activator grey-text text-darken-4">JavaScript语言精粹
+                                    </span>
+                                    <p>评分: 9.5
+                                        <a class="external-link right" href="http://book.douban.com/subject/11874748/" target="_blank">
 
-<p class="red-link-context">
-    <a href="/2014/07/13/reg/" rel="next" title="常用正则表达式">
-    下一篇：常用正则表达式
-  </a>
-</p>
+                                            <i class="fa fa-external-link"></i>
+                                        </a>
+                                    </p>
+                                </div>
 
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">简评
+                                        <i class="fa fa-times-circle-o right"></i>
+                                    </span>
 
-            </div>
-			
+                                    <p>这是一本前端人员的基础书，强烈推荐阅读，而且越早看受益越多！</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            
+                <div id="reading" class="row" style="margin-top: 20px;">
+                    
+                    
+                        <div class="book-item col s12 m6">
+                            <div class="card small hoverable">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="card-cover-image activator" src="http://img4.douban.com/lpic/s27881888.jpg">
+                                </div>
+                                <div class="card-content red-link-context">
+                                    <span class="card-title truncate activator grey-text text-darken-4">网络游戏核心技术与实战
+                                    </span>
+                                    <p>评分: ???
+                                        <a class="external-link right" href="http://book.douban.com/subject/25850090/" target="_blank">
+
+                                            <i class="fa fa-external-link"></i>
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">简评
+                                        <i class="fa fa-times-circle-o right"></i>
+                                    </span>
+
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            
+                <div id="wanted" class="row" style="margin-top: 20px;">
+                    
+                    
+                        <div class="book-item col s12 m6">
+                            <div class="card small hoverable">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="card-cover-image activator" src="http://img4.douban.com/lpic/s1113106.jpg">
+                                </div>
+                                <div class="card-content red-link-context">
+                                    <span class="card-title truncate activator grey-text text-darken-4">计算机程序的构造和解释
+                                    </span>
+                                    <p>评分: ???
+                                        <a class="external-link right" href="http://book.douban.com/subject/1148282/" target="_blank">
+
+                                            <i class="fa fa-external-link"></i>
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">简评
+                                        <i class="fa fa-times-circle-o right"></i>
+                                    </span>
+
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            
+
         </div>
-    </div>
-</article>
+        
 
 
 
-
-
-
+    
 </div>
 
         <div class="fixed-action-btn float-sitemap">
